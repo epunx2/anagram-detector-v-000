@@ -11,7 +11,7 @@ class Anagram
     old_word = @word.split("").sort
     matches.each do |word|
       new_word = word.split("").sort
-      if @word == new_word
+      if old_word == new_word
         return word
       end
     end
