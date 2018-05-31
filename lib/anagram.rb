@@ -9,7 +9,6 @@ class Anagram
   def match(matches)
     new_word = ""
     old_word = @word.split("").sort
-    index
     matches.each do |word|
       new_word = word.split("").sort
       if old_word == new_word
